@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .label-input1 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 1px;
+        }
+
+        .label-input2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 1px;
+        }
+
+        .wrapper .first-name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .label-input1 input {
+            width: 100%;
+            /* Set input width to 100% */
+        }
+    </style> -->
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+        }
+    
+        .name-fields {
+            display: flex;
+            gap: 5px;
+            padding: 1px;
+        }
+    
+        .label-input1 {
+            flex: 1; /* Let the fields share the available space equally */
+        }
+    
+        .label-input1 label,
+        .label-input1 input {
+            width: 99%; /* Set both label and input to 100% width */
+        }
+    
+        .label-input2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 1px;
+        }
+    
+        .label-input2 input,
+        .label-input2 select {
+            width: 100%; /* Set input and select width to 100% */
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="name-fields">
+            <div class="label-input1">
+                <label>First name</label>
+                <input type="text">
+            </div>
+    
+            <div class="label-input1">
+                <label>Last name:</label>
+                <input type="text">
+            </div>
+        </div>
+    
+        <div class="email-address">
+            <div class="label-input2">
+                <label>Email Address:</label>
+                <input type="text">
+            </div>
+        </div>
+    
+        <div class="role">
+            <div class="label-input2">
+                <label>Role</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+        </div>
+        <div class="access-level">
+            <div class="label-input2">
+                <label>Access Level</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

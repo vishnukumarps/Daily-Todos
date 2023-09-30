@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    header {
+      background-color: #4267b2;
+      width: 100%;
+      height: 60px;
+      display: flex;
+    }
+
+    header .header-left h1 {
+      color: white;
+      font-size: 36px;
+    }
+
+    .header-left {
+      width: 50%;
+      height: 100%;
+      margin-left: 18%;
+    }
+
+    .header-right {
+      /* border: solid 1px red; */
+      width: 50%;
+      height: 100%;
+      display: flex;
+      gap: 2%;
+    }
+
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      width: 250px;
+      /* border: solid 1px red; */
+      gap: 2px;
+    }
+
+    .input-box input {
+      background-color: rgb(235, 236, 226);
+    }
+
+    .btn {
+      height: 25px;
+      background-color: #4267b2;
+      color: white;
+      margin-top: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+      background-color: #f7faff;
+      display: flex;
+    }
+
+    .container-left {
+      width: 60%;
+      height: 100%;
+    }
+
+    .container-right {
+      width: 40%;
+      height: 100%;
+      font-family: sans-serif;
+
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .input-box2 {
+      width: 300px;
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .input-box2 input {
+      width: 45%;
+    }
+
+    .input-box3 {
+      width: 300px;
+      height: 20px;
+    }
+
+    .input-box3 input {
+      width: 99%;
+      height: 100%;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    .btn2 {
+      width: 300px;
+      background: green;
+      font-family: verdana;
+      font-size: 18px;
+      color: white;
+      border-radius: 5px 5px 5px 5px;
+      height: 50px;
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <h1>facebook</h1>
+    </div>
+    <div class="header-right">
+      <div class="input-box">
+        <label>Email or Phone</label>
+        <input type="text" />
+        <label><input type="checkbox" />Keep me logged in</label>
+      </div>
+
+      <div class="input-box">
+        <label>Password</label>
+        <input type="text" />
+        <p>forgot password?</p>
+      </div>
+      <button class="btn">Login</button>
+  </header>
+  <div class="container">
+    <div class="container-left">
+
+    </div>
+    <div class="container-right">
+      <h1>Sigin Up</h1>
+      <p>It is free and always will be</p>
+      <form>
+        <div class="input-box2">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="input-box3">
+          <input type="text" placeholder="Email or mobile number">
+        </div>
+        <div class="input-box3">
+          <input type="text" placeholder="Re-enter email or mobile number">
+        </div>
+        <div class="input-box3">
+          <input type="password" placeholder="New Password">
+        </div>
+        <div class="birthday">
+          <h3>Birthday</h3>
+          <span><input type="" /></span>
+          <span> <input type="month" id="start" name="start" min="2018-03" value="2018-05" /></span>
+        </div>
+        <div class="gender">
+          <label><input type="checkbox">Female</label>
+          <label><input type="checkbox">Male</label>
+        </div>
+        <button class="btn2">Sign up</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
